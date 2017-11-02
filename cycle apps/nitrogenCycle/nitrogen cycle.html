@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>My Future School</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<script src="https://files.codepedia.info/files/uploads/iScripts/html2canvas.js"></script>
+  
+	<script>
+		$(document).ready(function(){
+
+			
+		var element = $("#html-content-holder"); // global variable
+		var getCanvas; // global variable
+		 
+			$("#btn-Preview-Image").on('click', function () {
+				 html2canvas(element, {
+				 onrendered: function (canvas) {
+						$("#previewImage").append(canvas);
+						getCanvas = canvas;
+					 }
+				 });
+			});
+
+			$("#btn-Convert-Html2Image").on('click', function () {
+			var imgageData = getCanvas.toDataURL("image/png");
+			// Now browser starts downloading it instead of just showing it
+			var newData = imgageData.replace(/^data:image\/png/, "data:application/octet-stream");
+			$("#btn-Convert-Html2Image").attr("download", "CorporateLogo.png").attr("href", newData);
+			});
+
+		});
+
+	</script>
+
+  <style>
+	#x1{
+	background-color:white;
+	border-radius:20px;
+	}
+	
+	#x2{
+	background-color:white;
+	border-radius:20px;
+	}
+	
+	#x3{
+	background-color:white;
+	border-radius:20px;
+	}
+  </style>
+  
+</head>
+<body style="background: #CB356B;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #BD3F32, #CB356B);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #BD3F32, #CB356B); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */">
+	
+	<div class="jumbotron text-center" style="background: #CB356B;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #BD3F32, #CB356B);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #BD3F32, #CB356B); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	color:white;">
+			<h1 style="font-family: 'Pacifico', cursive;">Nitrogen Cycle</h1><br>
+			<p>My Future School  |  Revolutionary Digital Learning Platform</p>  <br>
+			<h4>
+				<nav class="navbar navbar-default"> 
+					<div class="container-fluid"> 
+						<div class="navbar-header"> 
+							<a class="navbar-brand" href="./index.html">MyFutureSchool</a> 
+					</div> 
+						<ul class="nav navbar-nav "> 
+							<li>
+								<a href="../index.html">Home</a>
+							</li> 
+							<li class="active">
+								<a href="../dashboard/dashboard.html">Dashboard</a>
+							</li> 
+						</ul> 
+					</div> 
+				</nav>
+			</h4>
+	</div>
+  
+	<div class="container"><center>
+		<div class="row" id="x2"><br>
+			<h1> Nitrogen Cycle </h1><br><br><br>
+			
+			<div class="col-sm-12">
+				<h3> Diagrams & Flow charts: </h3><br><br>
+				<img src="./nitrogen1.jpeg"/><br><br><hr><br>
+				<img src="./nitrogen2.jpeg"/>
+			</div>
+			
+		</div>
+			
+			
+			
+		<div class="row" id="x2"><br>
+			
+			<div class="col-sm-2"></div>
+			<div class="col-sm-8">
+				<h3><b> Theory & Explanation: </b></h3><br><br>
+				<p><h4>
+					The <b>nitrogen cycle</b> describes how nitrogen moves between plants, animals, bacteria, the atmosphere (the air), and soil in the ground. Nitrogen is an important element to all life on Earth.
+					<br><hr><br>
+					<b>Different Nitrogen States</b><br> For Nitrogen to be used by different life forms on Earth, it must change into different states. Nitrogen in the atmosphere, or air, is N2. Other important states of nitrogen include Nitrates (N03), Nitrites (NO2), and Ammonium (NH4).<br><hr><br>
+
+					<b>Nitrogen Cycle: </b>The pictures shows the flow of the nitrogen cycle. The most important part of the cycle is bacteria. Bacteria help the nitrogen change between states so it can be used. When nitrogen is absorbed by the soil, different bacteria help it to change states so it can be absorbed by plants. Animals then get their nitrogen from the plants.<br><br><br>
+
+					<b>Processes in the Nitrogen Cycle Fixation -</b> <br><br>
+					Fixation is the first step in the process of making nitrogen usable by plants. <br><br>Here bacteria change nitrogen into ammonium.<br><br> Nitrification - This is the process by which ammonium gets changed into nitrates by bacteria. Nitrates are what the plants can then absorb. Assimilation - This is how plants get nitrogen. They absorb nitrates from the soil into their roots. Then the nitrogen gets used in amino acids, nucleic acids, and chlorophyll. <br><br>Ammonification - This is part of the decaying process. When a plant or animal dies, decomposers like fungi and bacteria turn the nitrogen back into ammonium so it can reenter the nitrogen cycle. <br><br>Denitrification - Extra nitrogen in the soil gets put back out into the air. There are special bacteria that perform this task as well.
+					<br><hr><br>
+					<b>How have humans altered the nitrogen cycle?</b> <br><br>Unfortunately, human activity has altered the cycle. We do this by adding nitrogen into the soil with fertilizer as well as other activities that put more nitrous oxide gas into the atmosphere. This adds in more nitrogen than is needed by normal cycle and upsets the cycle's balance. <br><hr><br>
+
+					<b>Fun Facts</b><br><br> Around 78% of the atmosphere is nitrogen. <br><br>However, this is mostly not usable by animals and plants.<br><br> Nitrogen is used in fertilizer to help plants grow faster. <br><br>Nitrous oxide is a greenhouse gas.<br><br> Too much of it can also cause acid rain.<br><br> Nitrogen has no color, odor, or taste. <br><br>It is used in many explosives. <br><br>About 3% of your body weight is nitrogen. <br><br><br>
+
+
+				</h4></p>
+			</div>
+			<div class="col-sm-2"></div>
+			
+		</div>
+			
+			
+			
+			
+		</center></div>
+	</div>
+	
+	
+
+<br><br><br>
+
+
+
+
+
+
+
+
+
+
+
+<script>
+  $('#product_title').on('keyup', function(e) {
+       $('.title').text($(this).val());
+    });
+</script>
+<script>
+  $('#product_title1').on('keyup', function(e) {
+       $('.title1').text($(this).val());
+    });
+</script>
+</body>
+</html>

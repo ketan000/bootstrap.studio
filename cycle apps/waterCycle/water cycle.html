@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>My Future School</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<script src="https://files.codepedia.info/files/uploads/iScripts/html2canvas.js"></script>
+  
+	<script>
+		$(document).ready(function(){
+
+			
+		var element = $("#html-content-holder"); // global variable
+		var getCanvas; // global variable
+		 
+			$("#btn-Preview-Image").on('click', function () {
+				 html2canvas(element, {
+				 onrendered: function (canvas) {
+						$("#previewImage").append(canvas);
+						getCanvas = canvas;
+					 }
+				 });
+			});
+
+			$("#btn-Convert-Html2Image").on('click', function () {
+			var imgageData = getCanvas.toDataURL("image/png");
+			// Now browser starts downloading it instead of just showing it
+			var newData = imgageData.replace(/^data:image\/png/, "data:application/octet-stream");
+			$("#btn-Convert-Html2Image").attr("download", "CorporateLogo.png").attr("href", newData);
+			});
+
+		});
+
+	</script>
+
+  <style>
+	#x1{
+	background-color:white;
+	border-radius:20px;
+	}
+	
+	#x2{
+	background-color:white;
+	border-radius:20px;
+	}
+	
+	#x3{
+	background-color:white;
+	border-radius:20px;
+	}
+  </style>
+  
+</head>
+<body style="background: #CB356B;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #BD3F32, #CB356B);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #BD3F32, #CB356B); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */">
+	
+	<div class="jumbotron text-center" style="background: #CB356B;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #BD3F32, #CB356B);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #BD3F32, #CB356B); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	color:white;">
+			<h1 style="font-family: 'Pacifico', cursive;">Water Cycle</h1><br>
+			<p>My Future School  |  Revolutionary Digital Learning Platform</p>  <br>
+			<h4>
+				<nav class="navbar navbar-default"> 
+					<div class="container-fluid"> 
+						<div class="navbar-header"> 
+							<a class="navbar-brand" href="./index.html">MyFutureSchool</a> 
+					</div> 
+						<ul class="nav navbar-nav "> 
+							<li>
+								<a href="../index.html">Home</a>
+							</li> 
+							<li class="active">
+								<a href="../dashboard/dashboard.html">Dashboard</a>
+							</li> 
+						</ul> 
+					</div> 
+				</nav>
+			</h4>
+	</div>
+  
+	<div class="container"><center>
+		<div class="row" id="x2"><br>
+			<h1> Water Cycle </h1><br><br><br>
+			
+			<div class="col-sm-12">
+				<h3> Diagrams & Flow charts: </h3><br><br>
+				<img src="./water1.jpg"/><br><br><hr><br>
+				
+				
+			</div>
+			
+		</div>
+			
+			
+			
+		<div class="row" id="x2"><br>
+			
+			<div class="col-sm-2"></div>
+			<div class="col-sm-8">
+				<h3><b> Theory & Explanation: </b></h3><br><br>
+				<p><h5>
+					<b>What is the Water Cycle? </b><br><br>
+					The water cycle is a way that water moves all around the Earth. It never stops and doesn't really have a beginning or an end. <br><br>
+					It's like a big circle. We'll describe it by starting with water that's on land. 
+					<br><br><b>For example, water in the ocean or a lake.</b> Some water on the surface of the ocean will evaporate due to heat from the sun. When it evaporates it turns into vapor water and goes up into the atmosphere. This vapor water gets together with a lot of other vapor water and turns into clouds. 
+					<br><br>Clouds move about the earth with the weather and once they are so full of water they drop the water to Earth in some form of precipitation. It could be rain, snow, sleet, or hail. When the water hits the earth it may fall right back into the ocean or feed a flower or be snow on the top of a mountain. Eventually this water will evaporate and start the whole cycle again. 
+					
+					<br><br><hr><br>
+					
+					<b>How water goes from land to vapor in the atmosphere<br><br></b>
+					There are three main ways that water on land turns into vapor: <br><br>
+					<b>Evaporation </b>- This is the main process by which water goes from the ground to vapor in the atmosphere. Around 90 percent of the water vapor in the atmosphere got there through evaporation. Evaporation takes place only on the water's surface. It takes energy in the form of heat. Hot water will evaporate more easily than cold water. The sun provides a lot of the energy for evaporation in the water cycle, primarily causing evaporation from the surface of the ocean. <br><br>
+					
+					<b>Sublimation </b>- This is when water moves directly to vapor from ice or snow without ever melting into water. Good conditions for sublimation to occur is when ice or snow is in very cold conditions, but it is windy and the sun is shining. <br><br>
+					
+					<b>Transpiration </b>- Transpiration is when plants release water on to their leaves that then evaporates into vapor. Plants will release a lot of water as they grow. Around 10 percent of the water vapor in the atmosphere is estimated to come from transpiration. Water in the atmosphere We see water in the atmosphere in the form of clouds. There is a small amount of water even in clear skies, but clouds are where water has started to condense. <br><br>
+					
+					<b>Condensation</b> is the process of water vapor becoming liquid water. 
+					Condensation is a major step in the water cycle. The atmosphere helps to move water around the world. It takes water that evaporated from the ocean and moves it over land where clouds and storms form to water plants with rain. <br><br>
+					
+					<b>Precipitation</b>- Precipitation is when water falls from the atmosphere back to land. Once enough water gathers in a cloud droplets of water will form and fall to the earth. Depending on the temperature and weather this could be rain, snow, sleet, or even hail. Water storage A lot of the Earth's water does not take part in the water cycle very often., Much of it is stored. The Earth stores water in a number of places. The ocean is the largest storage of water. Around 96 percent of the Earth's water is stored in the ocean. We can't drink the salty ocean water, so fortunately for us, freshwater is also stored in lakes, glaciers, snow caps, rivers, and below the ground in ground water storage. 
+
+
+					<br><br><hr><br>
+					
+					<img src="./water2.jpg"/><br><br><hr><br>
+
+
+				
+				</h5></p>
+			</div>
+			<div class="col-sm-2"></div>
+			
+		</div>
+			
+			
+			
+			
+		</center></div>
+	</div>
+	
+	
+
+<br><br><br>
+
+
+
+
+
+
+
+
+
+
+
+<script>
+  $('#product_title').on('keyup', function(e) {
+       $('.title').text($(this).val());
+    });
+</script>
+<script>
+  $('#product_title1').on('keyup', function(e) {
+       $('.title1').text($(this).val());
+    });
+</script>
+</body>
+</html>

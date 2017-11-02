@@ -1,0 +1,1 @@
+// Details of the process can be found at https://responsivedesign.is/articles/creating-the-periodic-table-with-grid-css
