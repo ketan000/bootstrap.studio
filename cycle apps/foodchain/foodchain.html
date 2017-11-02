@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>My Future School</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<script src="https://files.codepedia.info/files/uploads/iScripts/html2canvas.js"></script>
+  
+	<script>
+		$(document).ready(function(){
+
+			
+		var element = $("#html-content-holder"); // global variable
+		var getCanvas; // global variable
+		 
+			$("#btn-Preview-Image").on('click', function () {
+				 html2canvas(element, {
+				 onrendered: function (canvas) {
+						$("#previewImage").append(canvas);
+						getCanvas = canvas;
+					 }
+				 });
+			});
+
+			$("#btn-Convert-Html2Image").on('click', function () {
+			var imgageData = getCanvas.toDataURL("image/png");
+			// Now browser starts downloading it instead of just showing it
+			var newData = imgageData.replace(/^data:image\/png/, "data:application/octet-stream");
+			$("#btn-Convert-Html2Image").attr("download", "CorporateLogo.png").attr("href", newData);
+			});
+
+		});
+
+	</script>
+
+  <style>
+	#x1{
+	background-color:white;
+	border-radius:20px;
+	}
+	
+	#x2{
+	background-color:white;
+	border-radius:20px;
+	}
+	
+	#x3{
+	background-color:white;
+	border-radius:20px;
+	}
+  </style>
+  
+</head>
+<body style="background: #CB356B;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #BD3F32, #CB356B);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #BD3F32, #CB356B); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */">
+	
+	<div class="jumbotron text-center" style="background: #CB356B;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #BD3F32, #CB356B);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #BD3F32, #CB356B); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	color:white;">
+			<h1 style="font-family: 'Pacifico', cursive;">Food Chain</h1><br>
+			<p>My Future School  |  Revolutionary Digital Learning Platform</p>  <br>
+			<h4>
+				<nav class="navbar navbar-default"> 
+					<div class="container-fluid"> 
+						<div class="navbar-header"> 
+							<a class="navbar-brand" href="./index.html">MyFutureSchool</a> 
+					</div> 
+						<ul class="nav navbar-nav "> 
+							<li>
+								<a href="../index.html">Home</a>
+							</li> 
+							<li class="active">
+								<a href="../dashboard/dashboard.html">Dashboard</a>
+							</li> 
+						</ul> 
+					</div> 
+				</nav>
+			</h4>
+	</div>
+  
+	<div class="container"><center>
+		<div class="row" id="x2"><br>
+			<h1> Food Chain </h1><br><br><br>
+			
+			<div class="col-sm-12">
+				<h3> Diagrams & Flow charts: </h3><br><br>
+				<img src="./food1.png"/><br><br><hr><br>
+				<img src="./food2.png"/><br><br><hr><br>
+				
+			</div>
+			
+		</div>
+			
+			
+			
+		<div class="row" id="x2"><br>
+			
+			<div class="col-sm-2"></div>
+			<div class="col-sm-8">
+				<h3><b> Theory & Explanation: </b></h3><br><br>
+				<p><h5>
+					<b>Food Chain and Food Web</b> <br><br>
+					Every living plant and animal must have energy to survive. <b>Plants rely on the soil, water, and the sun for energy.</b> <br><br>
+					Animals rely on plants as well as other animals for energy. In an ecosystem, plants and animals all rely on each other to live.<br><br>	Scientists sometimes describe this dependence using a food chain or a food web. 
+					<br><br><b>Food Chain</b> A food chain describes how different organisms eat each other, starting out with a plant and ending with an animal. 
+					<br><br><b>For example</b>, you could write the food chain for a lion like this: grass ---> zebra ---> lion
+					
+					</h3><br><br>
+					
+					<b>Links of the Chain </b><br><br>
+					There are names to help describe each link of the food chain. The names depend mostly on what the organism eats and how it contributes to the energy of the ecosystem. 
+					
+					<br><br><b>Producers</b> - Plants are producers. This is because they produce energy for the ecosystem. They do this because they absorb energy from sunlight through photosynthesis. They also need water and nutrients from the soil, but plants are the only place where new energy is made. 
+					
+					<br><br><b>Consumers</b> - Animals are consumers. This is because they don't produce energy, they just use it up. Animals that eat plants are called primary consumers or herbivores. Animals that eat other animals are called secondary consumers or carnivores. If a carnivore eats another carnivore, it is called a tertiary consumer. 
+					
+					<br><br>Some animals play both roles, eating both plants and animals. They are called <b>omnivores</b>. 
+					
+					<br><br><b>Decomposers </b>- Decomposers eat decaying matter (like dead plants and animals). They help put nutrients back into the soil for plants to eat. 
+					
+					<br><br><b>Examples of decomposers</b> are worms, bacteria, and fungi. Lets go back to this example: <br><br>
+					grass ---> zebra ---> lion 
+					<br><br>grass = producer <br><br>zebra = primary consumer <br><br>lion = secondary consumer <br><br>
+					
+					<b>Energy is Lost</b> Like we said above, all the energy made in the food chain comes from the producers, or plants, converting sunlight into energy with photosynthesis. The rest of the food chain just uses energy. So as you move through the food chain there is less and less energy available. For this reason, there are less and less organisms the further along the food chain you get. 
+					
+					<br><br>In our <b>example</b> above, there is more grass than zebras, and more zebras than lions. The zebras and lions use up energy doing stuff like running, hunting, and breathing. Each Link is Important Links higher up in the food chain rely on the lower links. Even though lions don't eat grass, they wouldn't last long if there wasn't any grass because then the zebras wouldn't have anything to eat. 
+					
+					<br><br><b>Food Web</b> In any ecosystem there are many food chains and, generally, most plants and animals are part of several chains. When you draw all the chains together you end up with a food web.
+					
+					</h3><br><br>
+					
+					<b>Trophic Levels</b> <br><br>Sometimes scientists describe each level in a food web with a trophic level. Here are the five trophic levels: 
+					<br><br><b>Level 1:</b> Plants (producers) 
+					<br><br><b>Level 2:</b> Animals that eat plants or herbivores (primary consumers) 
+					<br><br><b>Level 3:</b> Animals that eat herbivores (secondary consumers, carnivores) 
+					<br><br><b>Level 4:</b> Animals that eat carnivores (tertiary consumers, carnivores) 
+					<br><br><b>Level 5:</b> Animals at the top of the food chain are called apex predators. 
+					<br><br>Nothing eats these animals.
+
+
+
+
+
+
+					<br><br><hr><br>
+					
+					
+
+
+				
+				</h5></p>
+			</div><img src="./food3.png"/><br><br><hr><br>
+			<div class="col-sm-2"></div>
+			
+		</div>
+			
+			
+			
+			
+		</center></div>
+	</div>
+	
+	
+
+<br><br><br>
+
+
+
+
+
+
+
+
+
+
+
+<script>
+  $('#product_title').on('keyup', function(e) {
+       $('.title').text($(this).val());
+    });
+</script>
+<script>
+  $('#product_title1').on('keyup', function(e) {
+       $('.title1').text($(this).val());
+    });
+</script>
+</body>
+</html>

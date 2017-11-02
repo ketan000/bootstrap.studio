@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Random Math Formula with desmos graph API</title>
+  <script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [["$","$"],["\\(","\\)"]]
+    }
+  });
+</script>
+<script type="text/javascript"
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML-full">
+</script>
+
+<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config(
+{
+  TeX: {extensions:["mhchem.js"]}
+});</script>
+<script src="https://www.desmos.com/api/v0.6/calculator.js?apiKey=dcb31709b452b1cf9dc26972add0fda6">
+
+</script>
+
+  
+  
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+  <input class="button" type="button" value="New Formula" onclick="mathchange()">
+
+<!--<input class="button" type="button" value="Show Answer" onclick="toogleanswers()"> -->
+<p>
+<div id="MathOutput">
+Math Formula $${}$$
+</div>
+
+<div id="u1spp1" class="graph"></div>
+<a href="https://www.desmos.com"><img class="desmos"  src="http://p4.zdassets.com/hc/settings_assets/230349/200086105/JReBesQaLJt7dEhX2ks7zw-header.png"></a>
+  
+    <script  src="js/index.js"></script>
+
+</body>
+</html>
