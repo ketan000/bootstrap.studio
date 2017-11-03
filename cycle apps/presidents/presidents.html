@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>My Future School</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<script src="https://files.codepedia.info/files/uploads/iScripts/html2canvas.js"></script>
+  
+	<script>
+		$(document).ready(function(){
+
+			
+		var element = $("#html-content-holder"); // global variable
+		var getCanvas; // global variable
+		 
+			$("#btn-Preview-Image").on('click', function () {
+				 html2canvas(element, {
+				 onrendered: function (canvas) {
+						$("#previewImage").append(canvas);
+						getCanvas = canvas;
+					 }
+				 });
+			});
+
+			$("#btn-Convert-Html2Image").on('click', function () {
+			var imgageData = getCanvas.toDataURL("image/png");
+			// Now browser starts downloading it instead of just showing it
+			var newData = imgageData.replace(/^data:image\/png/, "data:application/octet-stream");
+			$("#btn-Convert-Html2Image").attr("download", "CorporateLogo.png").attr("href", newData);
+			});
+
+		});
+
+	</script>
+
+  <style>
+	#x1{
+	background-color:white;
+	border-radius:20px;
+	}
+	
+	#x2{
+	background-color:white;
+	border-radius:20px;
+	}
+	
+	#x3{
+	background-color:white;
+	border-radius:20px;
+	}
+  </style>
+  
+</head>
+<body style="background: #CB356B;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #BD3F32, #CB356B);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #BD3F32, #CB356B); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */">
+	
+	<div class="jumbotron text-center" style="background: #CB356B;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #BD3F32, #CB356B);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #BD3F32, #CB356B); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	color:white;">
+			<h1 style="font-family: 'Pacifico', cursive;">Presidents of India</h1><br>
+			<p>My Future School  |  Revolutionary Digital Learning Platform</p>  <br>
+			<h4>
+				<nav class="navbar navbar-default"> 
+					<div class="container-fluid"> 
+						<div class="navbar-header"> 
+							<a class="navbar-brand" href="./index.html">MyFutureSchool</a> 
+					</div> 
+						<ul class="nav navbar-nav "> 
+							<li>
+								<a href="../index.html">Home</a>
+							</li> 
+							<li class="active">
+								<a href="../dashboard/dashboard.html">Dashboard</a>
+							</li> 
+						</ul> 
+					</div> 
+				</nav>
+			</h4>
+	</div>
+  
+	<div class="container"><center>
+		<div class="row" id="x2"><br>
+			
+			
+			<h3>				List of Presidents of India :<br><br><hr><br>
+				<table>				
+				<tr><td>Name</td><td>Period</td></tr>
+				<tr><td>Rajendra Prasad</td><td>	26-Jan-1950 to 13-May-1962</td></tr>
+				<tr><td>Sarvepalli Radhakrishnan</td><td>	13-May-1962 to 13-May-1967</td></tr>
+				<tr><td>Zakir Hussain</td><td>	13-May-1967 to 3-May-1969</td></tr>
+				<tr><td>Varahagiri Venkata Giri</td><td>	3-May-1969 to 20-Jul-1969</td></tr>
+				<tr><td>Muhammad Hidayatullah</td><td>	20-Jul-1969 to 24-Aug-1969</td></tr>
+				<tr><td>Varahagiri Venkata Giri</td><td>	24-Aug-1969 to 24-Aug-1974</td></tr>
+				<tr><td>Fakhruddin Ali Ahmed</td><td>	24-Aug-1974 to 11-Feb-1977</td></tr>
+				<tr><td>Basappa Danappa Jatti</td><td>	11-Feb-1977 to 25-Jul-1977</td></tr>
+				<tr><td>Neelam Sanjiva Reddy</td><td>	25-Jul-1977 to 25-Jul-1982</td></tr>
+				<tr><td>Giani Zail Singh</td><td>	25-Jul-1982 to 25-Jul-1987</td></tr>
+				<tr><td>Ramaswamy Venkataraman</td><td>	25-Jul-1987 to 25-Jul-1992</td></tr>
+				<tr><td>Shankar Dayal Sharma</td><td>	25-Jul-1992 to 25-Jul-1997</td></tr>
+				<tr><td>Kocheril Raman Narayanan</td><td>	25-Jul-1997 to 25-Jul-2002 </td></tr>
+				<tr><td>A. P. J. Abdul Kalam</td><td>	25-Jul-2002 to 25-Jul-2007</td></tr>
+				<tr><td>Pratibha Patil</td><td>	25-Jul-2007 to 25-Jul-2012</td></tr>
+				<tr><td>Pranab Mukherjee</td><td>	25-Jul-2012 to 24-Jul-2017</td></tr>
+				<tr><td>Ram Nath Kovind</td><td>	25-Jul-2017 to Till now</td></tr>
+				</table>
+				</h3>
+				<br><br><br>
+				
+				
+			
+			<div class="col-sm-12">
+				<h3><b> Theory & Explanation: </b></h3>
+			
+				<h34 
+				The President of India is the head of state and first citizen of India. The President is also the Commander-in-chief of the Indian Armed Forces. Although the president is vested such powers by the Constitution of India, the position is largely a ceremonial role and the executive powers are de facto exercised by the Prime Minister. The post of President is known in Hindi as Rashtrapati, a Sanskrit neologism meaning "lord of the realm". The President is elected by the Electoral College composed of elected members of the parliament houses, the Lok Sabha and the Rajya Sabha, and also members of the Vidhan Sabha, the state legislative assemblies.
+				
+				<br><br><br><br>
+
+
+				There have been 14 presidents of India since the introduction of the post in 1950 (the current tenure is 5 years of an Indian President's term). The post was established when India was declared as a republic with the adoption of the Indian constitution. Apart from these thirteen, three acting presidents have also been in office for short periods of time. Varahagiri Venkata Giri became Indian Acting President in 1969 following the death of Zakir Husain, who died in office. Giri was elected President a few months later. He remains the only person to have held office both as a president and acting president. Giri was the only person to be elected as an independent candidate. The President may remain in office for a tenure of five years, as stated by article 56, part V, of the constitution of India. In the case where a president's term of office is terminated early or during the absence of the president, the vice president assumes office. By article 70 of part V, the parliament may decide how to discharge the functions of the president where this is not possible, or in any other unexpected contingency. Rajendra Prasad, the first President of India, is the only person to have held office for two terms.
+				
+				<br><br><br><br>
+
+				Presidents by state of birth
+				Seven presidents have been members of a political party before being elected. Six of these were active party members of the Indian National Congress. The Janata Party has had one member, Neelam Sanjiva Reddy, who later became president, he was born in Anantapur District (now Andhra Pradesh). Two presidents, Zakir Husain and Fakhruddin Ali Ahmed, have died in office. Their vice-presidents functioned as acting president until a new president was elected. Following Zakir Husain's death, two acting presidents held office until the new president, V. V. Giri, was elected. Varahagiri Venkata Giri himself, Zakir Husain's vice president, was the first acting president. When Giri resigned to take part in the presidential elections, he was succeeded by Mohammad Hidayatullah as acting president. The 12th president, Pratibha Patil, is the first woman to serve as President of India, elected in 2007.
+				<br><br>
+				The current President is Ram Nath Kovind, elected on 25 July 2017.<br><br>
+				A lawyer, veteran political representative and long-time advocate of egalitarianism and integrity in Indian public life and society, Shri Ram Nath Kovind was born on October 1, 1945, in Paraunkh, near Kanpur, Uttar Pradesh. His parents were Shri Maiku Lal and Smt Kalawati.
+				Before assuming charge of the office of the 14th President of India on July 25, 2017, Shri Kovind served as the 36th Governor of the state of Bihar from August 16, 2015, to June 20, 2017.<br><br><br><br>
+				Educational and Professional Background<br><br>
+				Shri Kovind completed his school education in Kanpur and obtained the degrees of B.Com and L.L.B. from Kanpur University. In 1971, he enrolled as an Advocate with the Bar Council of Delhi.<br><br>
+				<br><br><br><br>
+				Shri Kovind was Union Government Advocate in the Delhi High Court from 1977 to 1979 and Union Government Standing Counsel in the Supreme Court from 1980 to 1993. He became Advocate-on-Record of the Supreme Court of India in 1978. He practised at the Delhi High Court and Supreme Court for 16 years till 1993.<br><br><br><br>
+				Parliamentary and Public Life<br><br>
+				Shri Kovind was elected as a member of the Rajya Sabha from Uttar Pradesh in April 1994. He served for two consecutive terms of six years each till March 2006. Shri Kovind served on various Parliamentary Committees like Parliamentary Committee on Welfare of Scheduled Castes/Tribes; Parliamentary Committee on Home Affairs; Parliamentary Committee on Petroleum and Natural Gas; Parliamentary Committee on Social Justice and Empowerment; and Parliamentary Committee on Law and Justice. He was Chairman of the Rajya Sabha House Committee.
+				Shri Kovind also served as Member of the Board of Management of the Dr B.R Ambedkar University, Lucknow, and Member of the Board of Governors of the Indian Institute of Management, Kolkata. He was part of the Indian delegation at the United Nations and addressed the United Nations General Assembly in October 2002.<br><br><br><br>
+				Positions Held<br><br>
+				2015-17: Governor of Bihar<br><br>
+				1994-2006: Member of the Rajya Sabha, representing the state of Uttar Pradesh<br><br>
+				1971-75 and 1981: General Secretary, Akhil Bharatiya Koli Samaj<br><br>
+				1977-79: Union Government Advocate at the Delhi High Court<br><br>
+				1982-84: Union Government Junior Counsel in the Supreme Court<br><br><br><br>
+				Personal Details<br><br>
+				Shri Kovind married Smt Savita Kovind on May 30, 1974. They have a son, Shri Prashant Kumar, and a daughter, Miss Swati. An avid reader, the President has keen interest in reading books on politics and social change, law and history, and religion.
+				During his long public career, Shri Kovind has travelled widely across the country. He has also visited Thailand, Nepal, Pakistan, Singapore, Germany, Switzerland, France, the United Kingdom and the United States in his capacity as a Member of Parliament.
+
+				</h4><br><br>
+				
+				
+				
+				
+			</div>
+			
+		</div>
+			
+			
+			
+		<div class="row" id="x2"><br>
+			
+			<div class="col-sm-2"></div>
+			<div class="col-sm-8">
+				<h3><b> Images: </b></h3><br><br>
+				<p><h5>
+					
+
+					<br>
+					
+					<img src="./president1.png"/><br><br><hr><br>
+					<img src="./president2.png"/><br>The Rashtrapati Bhawan<br><hr><br>
+
+				
+				</h5></p>
+			</div>
+			<div class="col-sm-2"></div>
+			sources:  http://presidentofindia.nic.in/profile.htm; wikipedia,
+		</div>
+			
+			
+			
+			
+		</center></div>
+	</div>
+	
+	
+
+<br><br><br>
+
+
+
+
+
+
+
+
+
+
+
+<script>
+  $('#product_title').on('keyup', function(e) {
+       $('.title').text($(this).val());
+    });
+</script>
+<script>
+  $('#product_title1').on('keyup', function(e) {
+       $('.title1').text($(this).val());
+    });
+</script>
+</body>
+</html>
