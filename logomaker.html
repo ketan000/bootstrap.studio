@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>The Bootstrap Studio</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<script src="https://files.codepedia.info/files/uploads/iScripts/html2canvas.js"></script>
+  
+	<script>
+		$(document).ready(function(){
+
+			
+		var element = $("#html-content-holder"); // global variable
+		var getCanvas; // global variable
+		 
+			$("#btn-Preview-Image").on('click', function () {
+				 html2canvas(element, {
+				 onrendered: function (canvas) {
+						$("#previewImage").append(canvas);
+						getCanvas = canvas;
+					 }
+				 });
+			});
+
+			$("#btn-Convert-Html2Image").on('click', function () {
+			var imgageData = getCanvas.toDataURL("image/png");
+			// Now browser starts downloading it instead of just showing it
+			var newData = imgageData.replace(/^data:image\/png/, "data:application/octet-stream");
+			$("#btn-Convert-Html2Image").attr("download", "CorporateLogo.png").attr("href", newData);
+			});
+
+		});
+
+	</script>
+
+  <style>
+	#x1{
+	background-color:white;
+	border-radius:20px;
+	}
+	
+	#x2{
+	background-color:white;
+	border-radius:20px;
+	}
+	
+	#x3{
+	background-color:white;
+	border-radius:20px;
+	}
+  </style>
+  
+</head>
+<body style="background: #CB356B;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #BD3F32, #CB356B);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #BD3F32, #CB356B); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */">
+	
+	<div class="jumbotron text-center" style="background: #CB356B;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #BD3F32, #CB356B);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #BD3F32, #CB356B); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	color:white;">
+			<h1 style="font-family: 'Pacifico', cursive;">The Bootstrap Studio</h1><br>
+			<p>Logo Maker Free - v-1.02</p>  <br>
+			<h4>
+				<nav class="navbar navbar-default"> 
+					<div class="container-fluid"> 
+						<div class="navbar-header"> 
+							<a class="navbar-brand" href="./index.html">The Bootstrap Studio</a> 
+					</div> 
+						<ul class="nav navbar-nav "> 
+							<li>
+								<a href="../index.html">Home</a>
+							</li> 
+							<li class="active">
+								<a href="../dashboard/dashboard.html">Dashboard</a>
+							</li> 
+						</ul> 
+					</div> 
+				</nav>
+			</h4>
+	</div>
+  
+	<div class="container">
+		<div class="row" >
+			<div class="col-sm-6" id="x2">
+				<center><br>
+					<h1> Logo Maker </h1><hr>
+					<h4> Please Enter the details: </h4><br><br>
+				</center>
+				
+					Company Name : <input name="product_title" id="product_title" type="text"><br><br>
+					Website Address: <input name="product_title1" id="product_title1" type="text"><br>
+					
+					<hr>
+					
+				
+			</div>
+			<div class="col-sm-1"></div>
+			<div class="col-sm-5" id="x2">
+			<center>
+				<br><br>
+				<div id="html-content-holder" style="background: #36D1DC;  /* fallback for old browsers */
+				background: -webkit-linear-gradient(to right, #5B86E5, #36D1DC);  /* Chrome 10-25, Safari 5.1-6 */
+				background: linear-gradient(to right, #5B86E5, #36D1DC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */">
+						<br><br>
+							<h1 style="font-family: 'Pacifico', cursive; color:white;" class="title">Your Quote Goes Here</h1><hr>
+							<h4 style="font-family: 'Pacifico', cursive; color:white;" class="title1">Website | &copy; info</h4>
+						<br><br>
+				</div>
+				<br><br>
+				
+				<h3>
+						<input id="btn-Preview-Image" type="button" value="Generate Preview" style="color:black; background-color:silver; padding:8px;"/>
+						<a id="btn-Convert-Html2Image" href="#" style="color:black; background-color:silver; padding:8px;">Download Logo
+						</a>
+					</h3><br>
+					
+						<div id="previewImage">
+						</div>
+						</center>
+			</div>
+			
+		</div>
+	
+			
+			
+			
+			
+			
+			
+			
+			
+		</center></div>
+	</div>
+	
+	
+
+<br><br><br>
+
+
+
+
+
+
+
+
+
+
+
+<script>
+  $('#product_title').on('keyup', function(e) {
+       $('.title').text($(this).val());
+    });
+</script>
+<script>
+  $('#product_title1').on('keyup', function(e) {
+       $('.title1').text($(this).val());
+    });
+</script>
+</body>
+</html>
